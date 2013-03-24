@@ -50,7 +50,7 @@ readSO <- function(sep = "", header = TRUE, stringsAsFactors = FALSE, out = "myd
     others = {
       suppressWarnings(
         read.table(text = gsub("^#", "", readLines("clipboard")),
-                   header = header, stringsAsFactors = FALSE, sep = sep))
+                   header = header, stringsAsFactors = stringsAsFactors, sep = sep))
     }) 
   assign(out, temp, envir = .GlobalEnv)
   message("data.frame ", dQuote(out), " created in your workspace")
