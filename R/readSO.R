@@ -7,7 +7,7 @@
 #' @param sep character. Determines the field separator character passed to \code{read.table}.
 #' @param header logical. Determines whether the first row consists of names of variables.
 #' @param stringsAsFactors logical. Whether strings are converted to factors or remain character variables.
-#' @return A data.frame as read.table produces.
+#' @return A data.frame as \code{read.table} produces.
 #' @note By default, stringsAsFactors is FALSE which is different to the R default.
 #'
 #' @export

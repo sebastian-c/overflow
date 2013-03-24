@@ -15,7 +15,7 @@
   converted to factors or remain character variables.}
 }
 \value{
-  A data.frame as read.table produces.
+  A data.frame as \code{read.table} produces.
 }
 \description{
   A wrapper for \link{read.table}. Reads a table from text
