@@ -2,7 +2,8 @@ Package: oveRflow
 Version: 0.1-0
 Date: 2013-03-24
 Title: Utility functions for answering R question on StackOverflow
-Authors@R: c(person("Sebastian", "Campbell", role = c("aut", "cre")),
+Authors@R: c(person("Sebastian", "Campbell", role = c("aut", "cre"),
+    email="sebastian.campbell@sydney.edu.au"),
     person("Ananda", "Mahto", role="aut"))
 Author: Sebastian Campbell, Ananda Mahto
 Maintainer: Sebastian Campbell <sebastian.campbell@sydney.edu.au>
