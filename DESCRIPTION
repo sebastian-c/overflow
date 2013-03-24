@@ -16,3 +16,4 @@ URL: http://github.com/sebastian-c/oveRflow
 BugReports: http://github.com/sebastian-c/oveRflow/issues
 Collate:
     'readSO.R'
+    'tmp.install.packages.R'
