@@ -10,6 +10,9 @@
 
   \item{header}{logical. Determines whether the first row
   consists of names of variables.}
+
+  \item{stringsAsFactors}{logical. Whether strings are
+  converted to factors or remain character variables.}
 }
 \value{
   A data.frame as read.table produces.
