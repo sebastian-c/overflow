@@ -1,2 +1,2 @@
 export(readSO)
-export(tmp.install.packages)
+export(tmp_install_packages)

@@ -1,3 +1,4 @@
+* New function: tmp_install_packages - installs packages to a temporary library.
 * Bugfix - readSO now works on Mac.
 
 overflow 0.1-0
