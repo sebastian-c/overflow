@@ -30,6 +30,12 @@
   temporary directory they should be deleted upon next
   reboot (this depends on your operating system).
 }
+\note{
+  You can find alternative functions in the original
+  question and answers on StackOverflow :
+
+  \url{http://stackoverflow.com/questions/14896941/install-an-r-package-temporarily-only-for-the-current-session}
+}
 \examples{
 \dontrun{
 ## Temporarily install the ggplot2 package in the current R session
@@ -37,7 +43,7 @@ tmp.install.packages("ggplot2")
 }
 }
 \author{
-  Julien Barnier
+  Julien Barnier <julien@nozav.org>
 }
 \seealso{
   \code{\link{install.packages}}, \code{\link{.libPaths}}
