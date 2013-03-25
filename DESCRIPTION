@@ -4,7 +4,8 @@ Date: 2013-03-24
 Title: Utility functions for answering R question on StackOverflow
 Authors@R: c(person("Sebastian", "Campbell", role = c("aut", "cre"),
     email="sebastian.campbell@sydney.edu.au"),
-    person("Ananda", "Mahto", role="aut"),
+    person("Ananda", "Mahto", role="aut",
+    email="ananda@mahto.info"),
     person("Julien", "Barnier", role="aut",
     email="julien@nozav.org"))
 Author: Sebastian Campbell, Ananda Mahto, Julien Barnier
