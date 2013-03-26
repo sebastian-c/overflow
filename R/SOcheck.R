@@ -8,7 +8,8 @@
 #' @author Sebastian Campbell
 #' 
 #' @param script An expression in curly braces which you wish to test
-#' @param dir character. A temporary directory in which you want your code chunk to go.
+#' @param dir character. A temporary directory in which you want the script containing 
+#' your code chunk to go.
 #' 
 #' @examples
 #' 
@@ -24,9 +25,12 @@
 
 SOcheck <- function(script, dir=tempdir()){
   scripttext <- deparse(substitute(script))
-  sourcefile <- paste0(scripttext[-c(1, length(scripttext))], collapse="\n")
-  write(sourcefile, file.path(dir, "SOcheckfile.R"))
-  try(suppressWarnings(
-    shell(paste0("Rscript ", file.path(dir, "SOcheckfile.R")), mustWork=TRUE)
-  ), silent=TRUE)
+  if(all(grepl("[{}]", scripttext[c(1, length(scripttext))]))){
+    scripttext <- scripttext[-c(1, length(scripttext))]
+  }
+    sourcefile <- paste0(scripttext, collapse="\n")
+  write(scripttext, file.path(dir, "SOcheckfile.R"))
+  cat(suppressWarnings(
+    paste0(system(paste0("Rscript --vanilla ", file.path(dir, "SOcheckfile.R")), intern=TRUE), collapse="\n")
+  ))
 }
