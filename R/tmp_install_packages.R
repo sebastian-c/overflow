@@ -38,7 +38,8 @@ tmp_install_packages <- function(package, dependencies=TRUE, ...) {
   ## this session would be installed into 'path'
   if (!(path %in% .libPaths())) {
     firstpath <- .libPaths()[1]
-    .libPaths(c(firstpath, path))
+    otherpaths <- .libPaths()[-1]
+    .libPaths(c(firstpath, path, otherpaths))
   }
   install.packages(package, dependencies=dependencies, lib=path, ...)
 }
