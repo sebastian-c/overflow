@@ -10,6 +10,9 @@
 #' @param script An expression in curly braces which you wish to test
 #' @param dir character. A temporary directory in which you want the script containing 
 #' your code chunk to go.
+#' @param envir The environment in which the code is to be evaluated. In most cases, 
+#' you will want this to be \code{package:stats} as this is the lowest in the hierarchy
+#' of packages which come installed with R.
 #' 
 #' @examples
 #' 
@@ -23,14 +26,12 @@
 #' 
 #' @export
 
-SOcheck <- function(script, dir=tempdir()){
+SOcheck <- function(script, dir=tempdir(), envir=as.environment("package:stats")){
   scripttext <- deparse(substitute(script))
   if(all(grepl("[{}]", scripttext[c(1, length(scripttext))]))){
     scripttext <- scripttext[-c(1, length(scripttext))]
   }
     sourcefile <- paste0(scripttext, collapse="\n")
   write(scripttext, file.path(dir, "SOcheckfile.R"))
-  cat(suppressWarnings(
-    paste0(system(paste0("Rscript --vanilla ", file.path(dir, "SOcheckfile.R")), intern=TRUE), collapse="\n")
-  ))
+  source(file.path(dir, "SOcheckfile.R"), local=envir, echo=TRUE)
 }
