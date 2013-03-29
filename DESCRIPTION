@@ -20,3 +20,4 @@ BugReports: http://github.com/sebastian-c/oveRflow/issues
 Collate:
     'readSO.R'
     'tmp_install_packages.R'
+    'readClip.R'
