@@ -1,3 +1,4 @@
+* readSO now strips out ## comments and leading whitespace
 * Bugfix - tmp_install_packages no longer overwrites libraries which are not 
   the base and user libraries.
 * New function: tmp_install_packages - installs packages to a temporary library.
