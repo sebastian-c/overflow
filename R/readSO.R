@@ -39,19 +39,8 @@
 #'}
 #'
 readSO <- function(sep = "", header = TRUE, stringsAsFactors = FALSE, out = "mydf") {
-  OS <- ifelse(Sys.info()["sysname"] == "Darwin", "Mac", "others")
-  temp <- switch(
-    OS,
-    Mac = {
-      suppressWarnings(
-        read.table(text = gsub("^#", "", pipe("pbpaste")), header = header, 
-                   stringsAsFactors = stringsAsFactors, sep = sep))
-    },
-    others = {
-      suppressWarnings(
-        read.table(text = gsub("^#", "", readLines("clipboard")),
-                   header = header, stringsAsFactors = stringsAsFactors, sep = sep))
-    }) 
+  temp <- gsub("^#|^##", "", gsub("^\\s+", "", suppressWarnings(readClip())))
+  temp <- read.table(text = temp, header = header, stringsAsFactors = stringsAsFactors, sep = sep)
   assign(out, temp, envir = .GlobalEnv)
   message("data.frame ", dQuote(out), " created in your workspace")
   temp
