@@ -9,9 +9,15 @@
 
 readClip <- function(){
   OS <- Sys.info()["sysname"]
+  
   cliptext <- switch(OS,
-                     Darwin = pipe("pbpaste"),
-                     Windows = readClipboard(),
-                     readLines("clipboard"))
-  cliptext
+                   Darwin = {
+                     con <- pipe("pbpaste")
+                     text <- readLines(con)
+                     close(con)
+                     text
+                   },
+                   Windows = readClipboard(),
+                   readLines("clipboard"))
+    cliptext
 }
