@@ -21,3 +21,4 @@ Collate:
     'readSO.R'
     'tmp_install_packages.R'
     'readClip.R'
+    'writeClip.R'
