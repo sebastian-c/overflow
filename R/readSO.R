@@ -13,7 +13,7 @@
 #'your workspace called "\code{mydf}" unless specified using the \code{out}
 #'argument.
 #'
-#' @param sep character. Determines the field separator character passed to \code{read.table}.
+#' @param sep character. Determines the field separator character passed to \code{read.table}. Alternatively, \code{sep} can be specified as "fwf" to attempt to read fixed-width-format files.
 #' @param header logical. Determines whether the first row consists of names of variables.
 #' @param stringsAsFactors logical. Whether strings are converted to factors or remain character variables.
 #' @param out character. Desired output object name. Defaults to \code{"mydf"}.
@@ -36,12 +36,55 @@
 #'## Now, just type:
 #'
 #'readSO()
+#'
+#'## Fixed-width-format example
+#'## Copy the following text
+#'
+#'Store     Min(Date)     Max (Date)     Status
+#'NYC1       1/1/2013      2/1/2013      Open
+#'NYC1       2/2/2013      2/3/2013      Closed for Inspection
+#'Boston1    1/1/2013      2/5/2013      Open
+#'
+#'## Now just type
+#'
+#'readSO(sep = "fwf")
+#'
 #'}
 #'
 readSO <- function(sep = "", header = TRUE, stringsAsFactors = FALSE, out = "mydf") {
-  temp <- gsub("^#|^##", "", gsub("^\\s+", "", suppressWarnings(readClip())))
-  temp <- read.table(text = temp, header = header, stringsAsFactors = stringsAsFactors, sep = sep)
+  temp <- gsub("^[# ]+", "", suppressWarnings(readClip()))
+  
+  if (sep == "fwf") {
+    temp <- readSOfwf(inData = temp, header = header, 
+                      stringsAsFactors = stringsAsFactors)
+  } else {
+    temp <- read.table(text = temp, header = header, 
+                       stringsAsFactors = stringsAsFactors, sep = sep)
+  }
+  
   assign(out, temp, envir = .GlobalEnv)
   message("data.frame ", dQuote(out), " created in your workspace")
   temp
 }
+NULL
+
+#'Read in pasted table-formatted data which have spaces in columns
+#'
+#'\code{readSO} (and similarly, \code{read.table}) cannot be used when some of the columns in a dataset have spaces. This function hooks into \code{readSO} to add such functionality by first trying to convert the dataset into a CSV format.
+#'
+#'@note This function is not meant to be called on its own, but rather through \code{\link{readSO}} which handles some initial pre-processing of the copied text strings. See the \code{readSO} help page for examples.
+#'
+#'@return A \code{data.frame}.
+#'
+#'@author Ananda Mahto
+#'
+readSOfwf <- function(inData, stringsAsFactors = FALSE, header = TRUE, out = "mydf") {
+  myStrings <- gsub("\\s\\s+", ",", inData)
+  
+  temp <- read.csv(text = myStrings, header = header,
+                   stringsAsFactors = stringsAsFactors)
+  
+  if (isTRUE(dropFirst)) temp <- temp[-1]
+  else temp <- temp
+}
+NULL

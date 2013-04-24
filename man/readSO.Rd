@@ -7,7 +7,9 @@
 }
 \arguments{
   \item{sep}{character. Determines the field separator
-  character passed to \code{read.table}.}
+  character passed to \code{read.table}. Alternatively,
+  \code{sep} can be specified as "fwf" to attempt to read
+  fixed-width-format files.}
 
   \item{header}{logical. Determines whether the first row
   consists of names of variables.}
@@ -56,6 +58,19 @@
 ## Now, just type:
 
 readSO()
+
+## Fixed-width-format example
+## Copy the following text
+
+Store     Min(Date)     Max (Date)     Status
+NYC1       1/1/2013      2/1/2013      Open
+NYC1       2/2/2013      2/3/2013      Closed for Inspection
+Boston1    1/1/2013      2/5/2013      Open
+
+## Now just type
+
+readSO(sep = "fwf")
+
 }
 }
 \author{
