@@ -26,7 +26,7 @@
 \examples{
 \dontrun{
 SOdput(mtcars)
-SOdput(head(mtcars))
+SOdput(mtcars, rows=1:6)
 }
 }
 \author{

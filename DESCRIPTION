@@ -7,7 +7,8 @@ Authors@R: c(person("Sebastian", "Campbell", role = c("aut", "cre"),
     person("Ananda", "Mahto", role="aut",
     email="ananda@mahto.info"),
     person("Julien", "Barnier", role="aut",
-    email="julien@nozav.org"))
+    email="julien@nozav.org"),
+    person("Tyler", "Rinker", role="ctb"))
 Author: Sebastian Campbell, Ananda Mahto, Julien Barnier
 Maintainer: Sebastian Campbell <sebastian.campbell@sydney.edu.au>
 Description: On StackOverflow, there are several tasks which are performed

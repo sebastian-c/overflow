@@ -7,6 +7,8 @@ Authors: Sebastian Campbell, Ananda Mahto, Julien Barnier
 
 Maintainer: Sebastian Campbell
 
+Contributor: Tyler Rinker
+
 Installation
 ------------
 
