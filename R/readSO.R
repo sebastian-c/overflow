@@ -84,7 +84,6 @@ readSOfwf <- function(inData, stringsAsFactors = FALSE, header = TRUE, out = "my
   temp <- read.csv(text = myStrings, header = header,
                    stringsAsFactors = stringsAsFactors)
   
-  if (isTRUE(dropFirst)) temp <- temp[-1]
-  else temp <- temp
+  temp
 }
 NULL
