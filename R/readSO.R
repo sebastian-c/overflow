@@ -39,7 +39,7 @@
 #'}
 #'
 readSO <- function(sep = "", header = TRUE, stringsAsFactors = FALSE, out = "mydf") {
-  temp <- gsub("^[# ]+", "", suppressWarnings(readClip()))
+  temp <- sub("^[# ]+", "", suppressWarnings(readClip()))
   temp <- read.table(text = temp, header = header, stringsAsFactors = stringsAsFactors, sep = sep)
   assign(out, temp, envir = .GlobalEnv)
   message("data.frame ", dQuote(out), " created in your workspace")
