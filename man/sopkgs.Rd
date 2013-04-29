@@ -1,8 +1,8 @@
-\name{tmp_install_packages}
-\alias{tmp_install_packages}
+\name{sopkgs}
+\alias{sopkgs}
 \title{Temporarily install a package in the current R session}
 \usage{
-  tmp_install_packages(package, dependencies = TRUE, ...)
+  sopkgs(package, dependencies = TRUE, ...)
 }
 \arguments{
   \item{package}{character. A package name, or vector of
@@ -39,7 +39,7 @@
 \examples{
 \dontrun{
 ## Temporarily install the ggplot2 package in the current R session
-tmp_install_packages("ggplot2")
+sopkgs("ggplot2")
 }
 }
 \author{

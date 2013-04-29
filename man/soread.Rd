@@ -1,8 +1,8 @@
-\name{readSO}
-\alias{readSO}
+\name{soread}
+\alias{soread}
 \title{Read in StackOverflow pasted table-formatted data}
 \usage{
-  readSO(sep = "", header = TRUE, stringsAsFactors = FALSE,
+  soread(sep = "", header = TRUE, stringsAsFactors = FALSE,
     out = "mydf")
 }
 \arguments{
@@ -35,7 +35,7 @@
   This function is basically a convenience function for the
   above.
 
-  The output of \code{\link{readSO}} is automatically
+  The output of \code{\link{soread}} is automatically
   assigned to an object in your workspace called
   "\code{mydf}" unless specified using the \code{out}
   argument.
@@ -55,7 +55,7 @@
 
 ## Now, just type:
 
-readSO()
+soread()
 }
 }
 \author{

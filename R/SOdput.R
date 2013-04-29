@@ -13,12 +13,12 @@
 #' 
 #' @examples
 #' \dontrun{
-#' SOdput(mtcars)
-#' SOdput(mtcars, rows=1:6)
+#' sodput(mtcars)
+#' sodput(mtcars, rows=1:6)
 #' }
 #' @export
 
-SOdput <- function(object, rows=TRUE, indents = 4, mdformat=TRUE) {
+sodput <- function(object, rows=TRUE, indents = 4, mdformat=TRUE) {
   name <- as.character(substitute(object))
   name <- name[length(name)]
   

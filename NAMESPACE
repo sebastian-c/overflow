@@ -1,3 +1,3 @@
-export(readSO)
-export(SOdput)
-export(tmp_install_packages)
+export(sodput)
+export(sopkgs)
+export(soread)

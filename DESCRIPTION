@@ -1,5 +1,5 @@
-Package: oveRflow
-Version: 0.1-0
+Package: overflow
+Version: 0.2-0
 Date: 2013-03-24
 Title: Utility functions for answering R question on StackOverflow
 Authors@R: c(person("Sebastian", "Campbell", role = c("aut", "cre"),
@@ -19,8 +19,8 @@ License: GPL-3
 URL: http://github.com/sebastian-c/oveRflow
 BugReports: http://github.com/sebastian-c/oveRflow/issues
 Collate:
-    'readSO.R'
-    'tmp_install_packages.R'
+    'sopkgs.R'
     'readClip.R'
     'writeClip.R'
-    'SOdput.R'
+    'sodput.R'
+    'soread.R'

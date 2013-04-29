@@ -1,8 +1,8 @@
-\name{SOdput}
-\alias{SOdput}
+\name{sodput}
+\alias{sodput}
 \title{Create complete code to create an object and copy to clipboard}
 \usage{
-  SOdput(object, rows = TRUE, indents = 4, mdformat = TRUE)
+  sodput(object, rows = TRUE, indents = 4, mdformat = TRUE)
 }
 \arguments{
   \item{object}{R object to convert to code}
@@ -25,8 +25,8 @@
 }
 \examples{
 \dontrun{
-SOdput(mtcars)
-SOdput(mtcars, rows=1:6)
+sodput(mtcars)
+sodput(mtcars, rows=1:6)
 }
 }
 \author{

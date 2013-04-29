@@ -1,3 +1,9 @@
+overflow 0.2-0
+--------------------------------------------------------------------------------
+
+* Renamed package from 'oveRflow' to 'overflow'
+* Renamed function `SOread`, `SOdput` and `tmp_install_packages to `soread` and 
+  `sodput` and `sopkgs` for easier use.
 * New function: SOdput - Sends `dput` to clipboard with assignment operator.
 * readSO now strips out ## comments and leading whitespace.
 * Bugfix - tmp_install_packages no longer overwrites libraries which are not 

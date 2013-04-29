@@ -9,7 +9,7 @@
 #'TRUE, stringsAsFactors = FALSE)}.  This function is basically a convenience
 #'function for the above.
 #'
-#'The output of \code{\link{readSO}} is automatically assigned to an object in
+#'The output of \code{\link{soread}} is automatically assigned to an object in
 #'your workspace called "\code{mydf}" unless specified using the \code{out}
 #'argument.
 #'
@@ -35,10 +35,10 @@
 #'
 #'## Now, just type:
 #'
-#'readSO()
+#'soread()
 #'}
 #'
-readSO <- function(sep = "", header = TRUE, stringsAsFactors = FALSE, out = "mydf") {
+soread <- function(sep = "", header = TRUE, stringsAsFactors = FALSE, out = "mydf") {
   temp <- sub("^[# ]+", "", suppressWarnings(readClip()))
   temp <- read.table(text = temp, header = header, stringsAsFactors = stringsAsFactors, sep = sep)
   assign(out, temp, envir = .GlobalEnv)

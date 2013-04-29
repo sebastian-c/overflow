@@ -28,10 +28,10 @@
 #'
 #' \dontrun{
 #' ## Temporarily install the ggplot2 package in the current R session
-#' tmp_install_packages("ggplot2")
+#' sopkgs("ggplot2")
 #' }
 
-tmp_install_packages <- function(package, dependencies=TRUE, ...) {
+sopkgs <- function(package, dependencies=TRUE, ...) {
   path <- tempdir()
   ## Add 'path' to .libPaths, and be sure that it is not
   ## at the first position, otherwise any package during
