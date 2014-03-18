@@ -2,7 +2,7 @@
 \alias{sopkgs}
 \title{Temporarily install a package in the current R session}
 \usage{
-  sopkgs(package, dependencies = TRUE, ...)
+sopkgs(package, dependencies = TRUE, ...)
 }
 \arguments{
   \item{package}{character. A package name, or vector of
@@ -15,26 +15,26 @@
   \code{install.packages}.}
 }
 \description{
-  This function can be useful when a package is necessary
-  to try to answer a question on StackOverflow and you know
-  that you won't need it anymore afterward. It will install
-  one or several packages only for the current R session.
+This function can be useful when a package is necessary to
+try to answer a question on StackOverflow and you know that
+you won't need it anymore afterward. It will install one or
+several packages only for the current R session.
 }
 \details{
-  The files are downloaded and installed in a temporary
-  directory, and this directory is temporarily added to the
-  library tree within which packages are looked for:
-  (\code{.libPaths}). If you start another R session, the
-  package won't be accessible as it won't be in the library
-  tree anymore, and as the files are installed in a
-  temporary directory they should be deleted upon next
-  reboot (this depends on your operating system).
+The files are downloaded and installed in a temporary
+directory, and this directory is temporarily added to the
+library tree within which packages are looked for:
+(\code{.libPaths}). If you start another R session, the
+package won't be accessible as it won't be in the library
+tree anymore, and as the files are installed in a temporary
+directory they should be deleted upon next reboot (this
+depends on your operating system).
 }
 \note{
-  You can find alternative functions in the original
-  question and answers on StackOverflow :
+You can find alternative functions in the original question
+and answers on StackOverflow :
 
-  \url{http://stackoverflow.com/questions/14896941/install-an-r-package-temporarily-only-for-the-current-session}
+\url{http://stackoverflow.com/questions/14896941/install-an-r-package-temporarily-only-for-the-current-session}
 }
 \examples{
 \dontrun{
@@ -43,9 +43,9 @@ sopkgs("ggplot2")
 }
 }
 \author{
-  Julien Barnier <julien@nozav.org>
+Julien Barnier <julien@nozav.org>
 }
 \seealso{
-  \code{\link{install.packages}}, \code{\link{.libPaths}}
+\code{\link{install.packages}}, \code{\link{.libPaths}}
 }
 

@@ -3,11 +3,9 @@ overflow
 
 An R package to assist people answering R questions on Stack Overflow.
 
-Authors: Sebastian Campbell, Ananda Mahto, Julien Barnier
+Authors: Sebastian Campbell, Ananda Mahto, Julien Barnier, Tyler Rinker
 
 Maintainer: Sebastian Campbell
-
-Contributor: Tyler Rinker
 
 Installation
 ------------
