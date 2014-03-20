@@ -1,4 +1,6 @@
 export(sodput)
 export(sopkgs)
 export(sorandf)
+export(sorandf_add)
+export(sorandf_reset)
 export(soread)
