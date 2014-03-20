@@ -1,3 +1,4 @@
 export(sodput)
 export(sopkgs)
 export(soread)
+export(SOcheck)
