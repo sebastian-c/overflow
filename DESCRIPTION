@@ -16,5 +16,5 @@ Description: On StackOverflow, there are several tasks which are performed
     an R session. This package automates some of these processes, making
     answering questions easier.
 License: GPL-3
-URL: http://github.com/sebastian-c/oveRflow
-BugReports: http://github.com/sebastian-c/oveRflow/issues
+URL: http://github.com/sebastian-c/overflow
+BugReports: http://github.com/sebastian-c/overflow/issues

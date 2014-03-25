@@ -66,7 +66,7 @@ sorandf <- function(rows=10L, cols=c("race", "gender", "age"), names=make.names(
 
 sorandf_add <- function(newf, name){
   
-  if(name %in% ls(env=.so.env)){
+  if(name %in% ls(envir=.so.env)){
     warning(paste0("existing function with name: ", name, " overwritten"))
   }
   assign(name, newf, envir=.so.env)
