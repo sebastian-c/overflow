@@ -13,7 +13,6 @@
 #' @details If using Linux, xclip will be used as the clipboard. To paste from 
 #' xclip, either use middle click or the command \code{xclip -o} in the shell.
 #' 
-#' @importFrom utils writeClipboard
 
 writeClip <- function(object){
   OS <- Sys.info()["sysname"]
