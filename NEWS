@@ -1,7 +1,8 @@
 overflow 0.2-1
 -------------------------------------------------------------------------------
 
-* Added sorandf for creating random datasets
+* New function: sorandf - for creating random datasets
+* New function: soaddnas - for adding NAs to columns of data.frames.
 
 overflow 0.2-0
 --------------------------------------------------------------------------------
