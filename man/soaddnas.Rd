@@ -13,8 +13,16 @@ soaddnas(object, columns = "all", narate = 0.1)
   \item{numeric.}{Number between 0 and 1 indicating the
   proportion of NAs to be placed in each selected column.}
 }
+\value{
+data.frame like the original but with NAs inserted in the
+selected columns.
+}
 \description{
 Add random NAs to each column of a data frame
+}
+\examples{
+soaddnas(sorandf(), columns=c("race", "gender"))
+soaddnas(sorandf(), columns=c(1,2))
 }
 \author{
 Sebastian Campbell

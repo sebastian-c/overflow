@@ -10,6 +10,11 @@
 #'   columns.
 #'   
 #' @author Sebastian Campbell
+#' 
+#' @examples
+#' soaddnas(sorandf(), columns=c("race", "gender"))
+#' soaddnas(sorandf(), columns=c(1,2))
+#' 
 #' @export soaddnas
 
 soaddnas <- function(object, columns="all", narate=0.1){
