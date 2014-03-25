@@ -1,6 +1,8 @@
 overflow
 ========
 
+[![Build Status](https://travis-ci.org/sebastian-c/overflow.png?branch=master,travis)](https://travis-ci.org/sebastian-c/overflow)
+
 An R package to assist people answering R questions on Stack Overflow.
 
 Authors: Sebastian Campbell, Ananda Mahto, Julien Barnier, Tyler Rinker
