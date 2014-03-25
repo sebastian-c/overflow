@@ -1,3 +1,4 @@
+export(soaddnas)
 export(sodput)
 export(sopkgs)
 export(sorandf)
