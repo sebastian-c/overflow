@@ -29,8 +29,11 @@ corresponding to different types of random data. It is
 intended for making reproducible examples easier.
 }
 \details{
-Within this function, there are a number of defaults which
-can be called by default:
+Each column must have a function defining it. It is
+possible to add new functions using the \code{sorandf_add}
+function and reset back to the defaults using the
+\code{sorandf_reset} function. Within this function, there
+are a number of defaults which can be called by default:
 
 \code{id = function(n) paste0("ID.", 1:n)}
 

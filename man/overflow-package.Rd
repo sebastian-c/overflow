@@ -1,0 +1,15 @@
+\docType{package}
+\name{overflow-package}
+\alias{overflow}
+\alias{overflow-package}
+\title{Helper functions for answering R StackOverflow questions}
+\description{
+This package is focused on providing helper functions to
+answer StackOverflow questions. It includes functions to
+transfer code and create random datasets.
+}
+\author{
+Sebastian Campbell, Ananda Mahto, Julien Barnier, Tyler
+Rinker
+}
+
