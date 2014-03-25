@@ -1,8 +1,14 @@
 #' Add random NAs to each column of a data frame
-#'
+#' 
 #' @param object data.frame to which NAs should be added
-#' @param columns nu
-#'
+#' @param columns numeric or character. Vector containing names or column 
+#'   numbers in which NAs are to be placed.
+#' @param numeric. Number between 0 and 1 indicating the proportion of NAs to be
+#'   placed in each selected column.
+#'   
+#' @return data.frame like the original but with NAs inserted in the selected
+#'   columns.
+#'   
 #' @author Sebastian Campbell
 #' @export soaddnas
 
