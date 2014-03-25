@@ -7,9 +7,9 @@
 sorandf(rows = 10L, cols = c("race", "gender", "age"),
   names = make.names(cols))
 
-sorandf_reset()
-
 sorandf_add(newf, name)
+
+sorandf_reset()
 }
 \arguments{
   \item{rows}{integer, number of rows in data.frame}
@@ -24,7 +24,9 @@ sorandf_add(newf, name)
   \item{name}{name to call new function}
 }
 \description{
-Create random data.frame
+\code{sorandf} creates a data frame with columns
+corresponding to different types of random data. It is
+intended for making reproducible examples easier.
 }
 \details{
 Within this function, there are a number of defaults which
@@ -69,5 +71,8 @@ sorandf_add(function(n){sample(1:10, n)}, "newf")
 sorandf(10, c("gender", "race", "newf"))
 sorandf_reset()
 }
+}
+\author{
+Sebastian Campbell, Tyler Rinker
 }
 

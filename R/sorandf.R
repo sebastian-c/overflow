@@ -1,44 +1,50 @@
 #' Create random data.frame
 #' 
-#' @aliases sorandf_add sorandf_reset
+#' \code{sorandf} creates a data frame with columns corresponding to different 
+#' types of random data. It is intended for making reproducible examples easier.
 #' 
+#' @aliases sorandf_add sorandf_reset
+#'   
 #' @param rows integer, number of rows in data.frame
 #' @param cols types of columns
 #' @param names names of columns
-#' @param newf function to add to sorandf functions. Must have just one
+#' @param newf function to add to sorandf functions. Must have just one 
 #'   parameter, n.
 #' @param name name to call new function
 #'   
-#' @details Within this function, there are a number of defaults which can be
-#'   called by default:
+#' @details Each column must have a function defining it. It is possible to add 
+#'   new functions using the \code{sorandf_add} function and reset back to the 
+#'   defaults using the \code{sorandf_reset} function. Within this function, 
+#'   there are a number of defaults which can be called by default:
 #'   
-#' \code{id = function(n) paste0("ID.", 1:n)}
-#' 
-#' \code{group = function(n) sample(c("control", "treat"), n, replace = TRUE)}
-#' 
-#' \code{hs.grad = function(n) sample(c("yes", "no"), n, replace = TRUE)}
-#' 
-#' \code{race = function(n) sample(c("black", "white", "asian"), n, 
-#'                          replace = TRUE, prob=c(.25, .5, .25))}
-#'                          
-#' \code{gender = function(n) sample(c("male", "female"), n, replace = TRUE)}
-#' 
-#' \code{age = function(n) sample(18:40, n, replace = TRUE)}
-#' 
-#' \code{m.status = function(n) sample(c("never", "married", "divorced", "widowed"), 
-#'                               n, replace = TRUE, prob=c(.25, .4, .3, .05))}
-#'                               
-#' \code{political = function(n) sample(c("democrat", "republican", 
-#'                                  "independent", "other"), n, replace= TRUE, 
-#'                                prob=c(.35, .35, .20, .1))}
-#'                                
-#' \code{n.kids = function(n) rpois(n, 1.5)}
-#' 
-#' \code{income = function(n) sample(c(seq(0, 30000, by=1000),
-#'                               seq(0, 150000, by=1000)), n, replace=TRUE)}
-#'                               
-#' \code{score = function(n) rnorm(n)}
-#' 
+#'   \code{id = function(n) paste0("ID.", 1:n)}
+#'   
+#'   \code{group = function(n) sample(c("control", "treat"), n, replace = TRUE)}
+#'   
+#'   \code{hs.grad = function(n) sample(c("yes", "no"), n, replace = TRUE)}
+#'   
+#'   \code{race = function(n) sample(c("black", "white", "asian"), n, replace = 
+#'   TRUE, prob=c(.25, .5, .25))}
+#'   
+#'   \code{gender = function(n) sample(c("male", "female"), n, replace = TRUE)}
+#'   
+#'   \code{age = function(n) sample(18:40, n, replace = TRUE)}
+#'   
+#'   \code{m.status = function(n) sample(c("never", "married", "divorced", 
+#'   "widowed"), n, replace = TRUE, prob=c(.25, .4, .3, .05))}
+#'   
+#'   \code{political = function(n) sample(c("democrat", "republican", 
+#'   "independent", "other"), n, replace= TRUE, prob=c(.35, .35, .20, .1))}
+#'   
+#'   \code{n.kids = function(n) rpois(n, 1.5)}
+#'   
+#'   \code{income = function(n) sample(c(seq(0, 30000, by=1000), seq(0, 150000, 
+#'   by=1000)), n, replace=TRUE)}
+#'   
+#'   \code{score = function(n) rnorm(n)}
+#'   
+#' @author Sebastian Campbell, Tyler Rinker
+#'   
 #' @examples
 #' \dontrun{
 #' sorandf(15, c("id", "age", "score"), names= c("card", "years", "points"))
