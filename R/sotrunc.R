@@ -9,23 +9,23 @@
 #' to display.
 #' @param nrow The number of rows (including 3 rows displayed as ellipsis) to 
 #' display.
-#' @param \ldots Other arguments passed to \code{Truncate}.
+#' @param \ldots Other arguments passed to \code{sotrunc}.
 #' @note This function is intended for truncated display.  Please do not use to 
 #' gernarate your \href{http://sscce.org/}{SSCCE}
 #' (Short, Self Contained, Correct (Compilable), Example).
 #' @return Prints a truncated display of the input.
 #' @keywords truncate
 #' @export
-#' @rdname Truncate
+#' @rdname sotrunc
 #' @examples
-#' Truncate(mtcars)
-#' Truncate(mtcars, nrow = 6)
-#' Truncate(mtcars, ncol = 6)
-#' Truncate(CO2)
-#' Truncate(lm(mpg~hp+am, data=mtcars))
-#' Truncate(1:10)
-#' Truncate(mtcars[1:5, 1:5])
-Truncate <- function(x, ncol = 10, nrow=15, ...){
+#' sotrunc(mtcars)
+#' sotrunc(mtcars, nrow = 6)
+#' sotrunc(mtcars, ncol = 6)
+#' sotrunc(CO2)
+#' sotrunc(lm(mpg~hp+am, data=mtcars))
+#' sotrunc(1:10)
+#' sotrunc(mtcars[1:5, 1:5])
+sotrunc <- function(x, ncol = 10, nrow=15, ...){
 
     if (ncol < 4 | nrow < 4) stop("`ncol` & `nrow` arguments must be > 3")
 
@@ -33,62 +33,62 @@ Truncate <- function(x, ncol = 10, nrow=15, ...){
     ncol
     nrow
 
-    UseMethod("Truncate")
+    UseMethod("sotrunc")
 
 }
 
-#' \code{Truncate.matrix} - matrix method for \code{Truncate}
-#' @rdname Truncate
+#' \code{sotrunc.matrix} - matrix method for \code{sotrunc}
+#' @rdname sotrunc
 #' @export
-#' @method Truncate matrix 
-Truncate.matrix <- function(x, ncol = 10, nrow=15, ...){
+#' @method sotrunc matrix 
+sotrunc.matrix <- function(x, ncol = 10, nrow=15, ...){
 
-    Truncate_helper(x=x, ncol = ncol, nrow=nrow)
+    sotrunc_helper(x=x, ncol = ncol, nrow=nrow)
      
 }
 
-#' \code{Truncate.data.frame} - data.frame method for \code{Truncate}
-#' @rdname Truncate
+#' \code{sotrunc.data.frame} - data.frame method for \code{sotrunc}
+#' @rdname sotrunc
 #' @export
-#' @method Truncate data.frame 
-Truncate.data.frame <- function(x, ncol = 10, nrow=15, ...){
+#' @method sotrunc data.frame 
+sotrunc.data.frame <- function(x, ncol = 10, nrow=15, ...){
 
-    Truncate_helper(x=x, ncol = ncol, nrow=nrow)
+    sotrunc_helper(x=x, ncol = ncol, nrow=nrow)
 
 }
 
-#' \code{Truncate.list} - list method for \code{Truncate}
-#' @rdname Truncate
+#' \code{sotrunc.list} - list method for \code{sotrunc}
+#' @rdname sotrunc
 #' @export
-#' @method Truncate list 
-Truncate.list <- function(x, ncol = 10, nrow=15, ...){
+#' @method sotrunc list 
+sotrunc.list <- function(x, ncol = 10, nrow=15, ...){
 
-    Truncate_list_helper(x=x, ncol = ncol, nrow=nrow)
+    sotrunc_list_helper(x=x, ncol = ncol, nrow=nrow)
      
 }
 
-#' \code{Truncate.default} - Default method for \code{Truncate}
-#' @rdname Truncate
+#' \code{sotrunc.default} - Default method for \code{sotrunc}
+#' @rdname sotrunc
 #' @export
-#' @method Truncate default 
-Truncate.default <- function(x, ncol = 10, nrow=15, ...){
+#' @method sotrunc default 
+sotrunc.default <- function(x, ncol = 10, nrow=15, ...){
 
     if (is.list(x)) {
-        Truncate_list_helper(x=x, ncol = ncol, nrow=nrow)
+        sotrunc_list_helper(x=x, ncol = ncol, nrow=nrow)
     } else {
-        if (!any(sapply(Truncate_checks, function(f) f(x)))) {
+        if (!any(sapply(sotrunc_checks, function(f) f(x)))) {
             return(x)
         }
-        Truncate_helper(x=x, ncol = ncol, nrow=nrow)
+        sotrunc_helper(x=x, ncol = ncol, nrow=nrow)
     } 
 }
 
 
-Truncate_checks <- gsub("Truncate", "is", methods(Truncate))
-Truncate_checks <- sapply(Truncate_checks[Truncate_checks != "is.default"], match.fun)
+sotrunc_checks <- gsub("sotrunc", "is", methods(sotrunc))
+sotrunc_checks <- sapply(sotrunc_checks[sotrunc_checks != "is.default"], match.fun)
 
 
-Truncate_col <- function(x, ncol = 10) {
+sotrunc_col <- function(x, ncol = 10) {
 
     if (!(ncol(x) <= ncol)) {
 
@@ -113,7 +113,7 @@ Truncate_col <- function(x, ncol = 10) {
 }
 
 
-Truncate_row <- function(x, nrow = 15) {
+sotrunc_row <- function(x, nrow = 15) {
 
     if (nrow(x) <= nrow) return(x)
 
@@ -141,20 +141,20 @@ Truncate_row <- function(x, nrow = 15) {
     print(o, quote=FALSE, row.names=FALSE)
 }
 
-Truncate_helper <- function(x, ncol = 10, nrow = 15){
-    Truncate_row(Truncate_col(x, ncol = ncol), nrow = nrow)
+sotrunc_helper <- function(x, ncol = 10, nrow = 15){
+    sotrunc_row(sotrunc_col(x, ncol = ncol), nrow = nrow)
 }
 
 
-Truncate_list_helper <- function(x, ncol = 10, nrow=15){
+sotrunc_list_helper <- function(x, ncol = 10, nrow=15){
 
     lapply(x, function(y) {
 
-        if (!any(sapply(Truncate_checks, function(f) f(y)))) {
+        if (!any(sapply(sotrunc_checks, function(f) f(y)))) {
             return(y)
         }
 
-        Truncate(y, ncol = ncol, nrow=nrow)
+        sotrunc(y, ncol = ncol, nrow=nrow)
     })
 }
 
