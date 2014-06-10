@@ -5,12 +5,12 @@
 #' 
 #' @aliases sorandf_add sorandf_reset
 #'   
-#' @param rows integer, number of rows in data.frame
-#' @param cols types of columns
-#' @param names names of columns
+#' @param rows integer. number of rows in data.frame.
+#' @param cols character. Vector of types of columns.
+#' @param names character. Vector of names of columns in data.frame output.
 #' @param newf function to add to sorandf functions. Must have just one 
 #'   parameter, n.
-#' @param name name to call new function
+#' @param name character. Name to call new function.
 #'   
 #' @details Each column must have a function defining it. It is possible to add 
 #'   new functions using the \code{sorandf_add} function and reset back to the 

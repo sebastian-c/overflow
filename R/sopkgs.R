@@ -20,7 +20,7 @@
 #' 
 #' @param package character. A package name, or vector of package names.
 #' @param dependencies logical. Argument passed to \code{install.packages}. Defaults to TRUE.
-#' @param ... other arguments passed to \code{install.packages}.
+#' @param ... Other arguments passed to \code{install.packages}.
 #' @export
 #' @author Julien Barnier <julien@@nozav.org>
 #' @seealso \code{\link{install.packages}}, \code{\link{.libPaths}}

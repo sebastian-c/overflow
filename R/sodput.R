@@ -3,10 +3,10 @@
 #' In several cases, you may want to give a sample dataset. \code{dput} is a great tool for doing so. This tool takes 
 #' the \code{dput} output and places it on the clipboard, as well as adding an assignment operator.
 #'
-#' @param object R object to convert to code
+#' @param object R object to convert to code.
 #' @param rows numeric. Vector of row numbers. These rows will be produced in the output. 
 #' By default, all rows are included.
-#' @param indents integer. Spaces to be added before each line
+#' @param indents integer. Spaces to be added before each line.
 #' @param mdformat logical. Whether or not to add 4 spaces before every line in order to format as a code block.
 #' 
 #' @author Tyler Rinker
