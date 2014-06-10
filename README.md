@@ -16,5 +16,5 @@ The easiest way to install this package is to use `install_github` from the `dev
 
 ```R
 library(devtools)
-install_github("oveRflow", "sebastian-c")
+install_github("overflow", "sebastian-c")
 ```
