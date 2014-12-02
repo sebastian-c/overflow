@@ -24,3 +24,4 @@ Collate:
     'readClip.R'
     'writeClip.R'
     'SOdput.R'
+    'SOanswer.R'
