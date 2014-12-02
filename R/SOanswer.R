@@ -43,7 +43,7 @@ soanswer <- function(expr, in_task_callback = FALSE)
     )
   )
   output <- tryCatch(
-    utils::capture.output(print(expr)),
+    utils::capture.output(print(if(in_task_callback) eval(expr) else expr)),
     message = function(m) substring(m$message, 1, nchar(m$message) - 1),
     warning = function(w) c("Warning message:", w$message),
     error   = function(e) paste("Error:", e$message)        
