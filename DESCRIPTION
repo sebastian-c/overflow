@@ -8,8 +8,9 @@ Authors@R: c(person("Sebastian", "Campbell", role = c("aut", "cre"),
     email="ananda@mahto.info"),
     person("Julien", "Barnier", role="aut",
     email="julien@nozav.org"),
+    person("Richard", "Cotton", role="aut"),
     person("Tyler", "Rinker", role="ctb"))
-Author: Sebastian Campbell, Ananda Mahto, Julien Barnier
+Author: Sebastian Campbell, Ananda Mahto, Julien Barnier, Richard Cotton
 Maintainer: Sebastian Campbell <sebastian.campbell@sydney.edu.au>
 Description: On StackOverflow, there are several tasks which are performed
     repeatedly including temporarily installing a package and copying code into
