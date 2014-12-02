@@ -3,7 +3,7 @@ oveRflow
 
 An R package to assist people answering R questions on Stack Overflow.
 
-Authors: Sebastian Campbell, Ananda Mahto, Julien Barnier
+Authors: Sebastian Campbell, Ananda Mahto, Julien Barnier, Richard Cotton
 
 Maintainer: Sebastian Campbell
 
