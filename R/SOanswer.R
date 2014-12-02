@@ -19,8 +19,8 @@ soanswer <- function(expr)
   output <- tryCatch(
     utils::capture.output(print(expr)),
     message = function(m) substring(m$message, 1, nchar(m$message) - 1),
-    warning = function(w) w$message,
-    error = function(e) e$message        
+    warning = function(w) c("Warning message:", w$message),
+    error   = function(e) paste("Error:", e$message)        
   )
   output_lines <- noquote(paste0("    ## ", output))
   lines <- c(input_lines, output_lines)
