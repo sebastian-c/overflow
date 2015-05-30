@@ -1,6 +1,6 @@
-Package: oveRflow
-Version: 0.1-0
-Date: 2013-03-24
+Package: overflow
+Version: 0.2-2
+Date: 2015-05-30
 Title: Utility functions for answering R question on StackOverflow
 Authors@R: c(person("Sebastian", "Campbell", role = c("aut", "cre"),
     email="sebastian.campbell@sydney.edu.au"),
@@ -8,21 +8,14 @@ Authors@R: c(person("Sebastian", "Campbell", role = c("aut", "cre"),
     email="ananda@mahto.info"),
     person("Julien", "Barnier", role="aut",
     email="julien@nozav.org"),
-    person("Richard", "Cotton", role="aut"),
-    person("Tyler", "Rinker", role="ctb"))
-Author: Sebastian Campbell, Ananda Mahto, Julien Barnier, Richard Cotton
+    person("Tyler", "Rinker", role="aut"),
+    person("Richard", "Cotton", role="aut"))
+Author: Sebastian Campbell, Ananda Mahto, Julien Barnier
 Maintainer: Sebastian Campbell <sebastian.campbell@sydney.edu.au>
 Description: On StackOverflow, there are several tasks which are performed
     repeatedly including temporarily installing a package and copying code into
     an R session. This package automates some of these processes, making
     answering questions easier.
 License: GPL-3
-URL: http://github.com/sebastian-c/oveRflow
-BugReports: http://github.com/sebastian-c/oveRflow/issues
-Collate:
-    'readSO.R'
-    'tmp_install_packages.R'
-    'readClip.R'
-    'writeClip.R'
-    'SOdput.R'
-    'SOanswer.R'
+URL: http://github.com/sebastian-c/overflow
+BugReports: http://github.com/sebastian-c/overflow/issues

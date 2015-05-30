@@ -1,13 +1,13 @@
-oveRflow
+overflow
 ========
+
+[![Build Status](https://travis-ci.org/sebastian-c/overflow.png?branch=master,travis)](https://travis-ci.org/sebastian-c/overflow)
 
 An R package to assist people answering R questions on Stack Overflow.
 
-Authors: Sebastian Campbell, Ananda Mahto, Julien Barnier, Richard Cotton
+Authors: Sebastian Campbell, Ananda Mahto, Julien Barnier, Tyler Rinker, Richard Cotton
 
 Maintainer: Sebastian Campbell
-
-Contributor: Tyler Rinker
 
 Installation
 ------------
@@ -16,5 +16,5 @@ The easiest way to install this package is to use `install_github` from the `dev
 
 ```R
 library(devtools)
-install_github("oveRflow", "sebastian-c")
+install_github("sebastian-c/overflow")
 ```
