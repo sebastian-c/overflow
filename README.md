@@ -37,7 +37,7 @@ Function|Description
 Function|Description
 -------|---------
 `sotrunc`|Truncate the output of `data.frame`s, matrices, and lists.
-`sorandf`|Function to create a random `data.frame`.
+`sorandf`|Function to create a random `data.frame`. It's probably better to just head over to [Tyler's "Wakefield" package](https://github.com/trinker/wakefield) rather than use this. 
 
 ## Examples
 
