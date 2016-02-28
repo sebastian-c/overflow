@@ -10,12 +10,10 @@ Authors@R: c(person("Sebastian", "Campbell", role = c("aut", "cre"),
     email="julien@nozav.org"),
     person("Tyler", "Rinker", role="aut"),
     person("Richard", "Cotton", role="aut"))
-Author: Sebastian Campbell, Ananda Mahto, Julien Barnier
-Maintainer: Sebastian Campbell <sebastian.campbell@sydney.edu.au>
 Description: On StackOverflow, there are several tasks which are performed
     repeatedly including temporarily installing a package and copying code into
     an R session. This package automates some of these processes, making
     answering questions easier.
 License: GPL-3
-URL: http://github.com/sebastian-c/overflow
-BugReports: http://github.com/sebastian-c/overflow/issues
+URL: https://github.com/mrdwab/overflow-mrdwab
+BugReports: https://github.com/mrdwab/overflow-mrdwab/issues
