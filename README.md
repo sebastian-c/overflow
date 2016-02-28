@@ -93,3 +93,4 @@ The output should automatically be copied to your clipboard to be pasted into a 
 
 - The features to read and write to the clipboard on Linux are buggy at best. 
 - Be sure that when you select data to be used with `soread`, you fully select the last line; failing to do so would lead to your dataset being truncated by one row.
+
