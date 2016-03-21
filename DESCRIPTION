@@ -2,14 +2,15 @@ Package: overflow
 Version: 0.2-2
 Date: 2015-05-30
 Title: Utility functions for answering R question on StackOverflow
-Authors@R: c(person("Sebastian", "Campbell", role = c("aut", "cre"),
+Authors@R: c(person("Sebastian", "Campbell", role = "aut",
     email="sebastian.campbell@sydney.edu.au"),
-    person("Ananda", "Mahto", role="aut",
+    person("Ananda", "Mahto", role=c("aut", "cre"),
     email="ananda@mahto.info"),
     person("Julien", "Barnier", role="aut",
     email="julien@nozav.org"),
     person("Tyler", "Rinker", role="aut"),
-    person("Richard", "Cotton", role="aut"))
+    person("Richard", "Cotton", role="aut"),
+    person("Brodie", "Gaslam", role="aut"))
 Description: On StackOverflow, there are several tasks which are performed
     repeatedly including temporarily installing a package and copying code into
     an R session. This package automates some of these processes, making
