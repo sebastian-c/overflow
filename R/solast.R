@@ -59,7 +59,7 @@ lastcall <- function(max.lookback=100L){
 #'
 #' Captures the output from \code{.Last.value} along with the last expression
 #' from the history file and formats them in a manner suitable for posting on
-#' Stackoverflow.
+#' Stack Overflow.
 #'
 #' If you the expression you want captured spans multiple lines, enclose them
 #' in a call to \code{\{}.  The curly braces will be dropped from the display

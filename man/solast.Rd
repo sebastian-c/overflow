@@ -24,7 +24,7 @@ character, invisibly, the call and value together formatted for
 \description{
 Captures the output from \code{.Last.value} along with the last expression
 from the history file and formats them in a manner suitable for posting on
-Stackoverflow.
+Stack Overflow.
 }
 \details{
 If you the expression you want captured spans multiple lines, enclose them
