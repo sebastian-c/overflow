@@ -29,7 +29,7 @@ Function|Description
 -------|-----------
 `soread`|Reads data directly from the clipboard and creates an object named "mydf" in your workspace.
 `soanswer`|Writes a call and its output to the clipboard, already formatted for pasting into an answer at Stack Overflow.
-`solast`|Captures the output from .Last.value along with the last expression from the history file and formats them in a manner suitable for posting on Stack Overflow.
+`solast`|Captures the output from `.Last.value` along with the last expression from the history file and formats them in a manner suitable for posting on Stack Overflow.
 `sodput`|A modified version of `dput` that copies your data to your clipboard, to be pasted into a question or an answer at Stack Overflow.
 `sopkgs`|Temporarily installs a package in the current R session.
 

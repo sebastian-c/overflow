@@ -1,6 +1,6 @@
 Package: overflow
-Version: 0.2-2
-Date: 2015-05-30
+Version: 0.2-3
+Date: 2016-03-21
 Title: Utility functions for answering R question on StackOverflow
 Authors@R: c(person("Sebastian", "Campbell", role = "aut",
     email="sebastian.campbell@sydney.edu.au"),

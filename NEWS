@@ -1,7 +1,13 @@
+overflow 0.2-3
+-------------------------------------------------------------------------------
+
+* `solast` added to capture the output from `.Last.value` along with the last 
+expression from the history.
+
 overflow 0.2-1
 -------------------------------------------------------------------------------
 
-* Added sorandf for creating random datasets
+* Added `sorandf` for creating random datasets.
 
 overflow 0.2-0
 --------------------------------------------------------------------------------
