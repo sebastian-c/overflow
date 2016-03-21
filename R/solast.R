@@ -110,5 +110,6 @@ solast <- function(silent=FALSE, clip=TRUE, drop.curly.brace=TRUE,...) {
   output_lines <- noquote(paste0("    ## ", output))
   lines <- c(x, output_lines)
   if(!silent) cat(lines, sep = "\n")
+  if(clip) writeClip(lines)
   invisible(lines)
 }
