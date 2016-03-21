@@ -18,3 +18,4 @@ License: GPL-3
 URL: https://github.com/mrdwab/overflow-mrdwab
 BugReports: https://github.com/mrdwab/overflow-mrdwab/issues
 RoxygenNote: 5.0.1
+Suggests: testthat
