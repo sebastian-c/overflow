@@ -40,10 +40,9 @@ StackOverflow :
 sopkgs("ggplot2")
 }
 }
-\author{
-Julien Barnier <julien@nozav.org>
-}
 \seealso{
 \code{\link{install.packages}}, \code{\link{.libPaths}}
 }
-
+\author{
+Julien Barnier <julien@nozav.org>
+}

@@ -52,10 +52,9 @@ soread()
 }
 
 }
-\author{
-Ananda Mahto
-}
 \seealso{
 \code{\link{dput}}, \code{\link{read.table}}
 }
-
+\author{
+Ananda Mahto
+}

@@ -6,8 +6,11 @@
 \alias{sorandf_reset}
 \title{Create random data.frame}
 \usage{
-sorandf(rows = 10L, cols = c("race", "gender", "age"),
-  names = make.names(cols))
+sorandf(
+  rows = 10L,
+  cols = c("race", "gender", "age"),
+  names = make.names(cols)
+)
 
 sorandf_add(newf, name)
 
@@ -74,4 +77,3 @@ sorandf_reset()
 \author{
 Sebastian Campbell, Tyler Rinker
 }
-

@@ -29,4 +29,3 @@ sodput(mtcars, rows=1:6)
 \author{
 Tyler Rinker
 }
-

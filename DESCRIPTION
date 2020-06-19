@@ -17,6 +17,7 @@ Description: On StackOverflow, there are several tasks which are performed
     answering questions easier.
 License: GPL-3
 URL: https://github.com/mrdwab/overflow-mrdwab
-BugReports: https://github.com/mrdwab/overflow-mrdwab/issues
-RoxygenNote: 5.0.1
+BugReports: http://mrdwab.github.io/overflow-mrdwab, https://github.com/mrdwab/overflow-mrdwab/issues
+RoxygenNote: 7.1.0
 Suggests: testthat
+Encoding: UTF-8

@@ -27,10 +27,9 @@ soanswer(message("A message!"))
 soanswer(warning("A warning!"))
 soanswer(stop("An error!"))
 }
-\author{
-Richard Cotton
-}
 \seealso{
 \code{\link[base]{addTaskCallback}}
 }
-
+\author{
+Richard Cotton
+}

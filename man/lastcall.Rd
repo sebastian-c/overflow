@@ -24,4 +24,3 @@ certain the command is complete.
 \author{
 Brodie Gaslam
 }
-

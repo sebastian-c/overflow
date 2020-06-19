@@ -2,10 +2,10 @@
 % Please edit documentation in R/sotrunc.R
 \name{sotrunc}
 \alias{sotrunc}
-\alias{sotrunc.data.frame}
-\alias{sotrunc.default}
-\alias{sotrunc.list}
 \alias{sotrunc.matrix}
+\alias{sotrunc.data.frame}
+\alias{sotrunc.list}
+\alias{sotrunc.default}
 \title{Truncate the Output of Dataframes, Matrices and Lists}
 \usage{
 sotrunc(x, ncol = 10, nrow = 15, ...)
@@ -36,14 +36,6 @@ Prints a truncated display of the input.
 \description{
 A dispaly printing function that trunates \code{data.frame}/\code{matrix} by 
 adding ellipsis \ldots to take the place of non-displayed columns and rows.
-
-\code{sotrunc.matrix} - matrix method for \code{sotrunc}
-
-\code{sotrunc.data.frame} - data.frame method for \code{sotrunc}
-
-\code{sotrunc.list} - list method for \code{sotrunc}
-
-\code{sotrunc.default} - Default method for \code{sotrunc}
 }
 \note{
 This function is intended for truncated display.  Please do not use to 
@@ -60,4 +52,3 @@ sotrunc(1:10)
 sotrunc(mtcars[1:5, 1:5])
 }
 \keyword{truncate}
-

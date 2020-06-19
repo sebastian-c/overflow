@@ -48,10 +48,9 @@ solast()
 solast()
 }
 }
-\author{
-Andanda Mahto, Brodie Gaslam
-}
 \seealso{
 \code{\link{lastcall}} for limitations in capturing the last call
 }
-
+\author{
+Andanda Mahto, Brodie Gaslam
+}
