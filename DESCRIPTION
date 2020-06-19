@@ -16,8 +16,8 @@ Description: On StackOverflow, there are several tasks which are performed
     an R session. This package automates some of these processes, making
     answering questions easier.
 License: GPL-3
-URL: https://github.com/mrdwab/overflow-mrdwab
-BugReports: http://mrdwab.github.io/overflow-mrdwab, https://github.com/mrdwab/overflow-mrdwab/issues
+URL: http://mrdwab.github.io/overflow-mrdwab, https://github.com/mrdwab/overflow-mrdwab
+BugReports: https://github.com/mrdwab/overflow-mrdwab/issues
 RoxygenNote: 7.1.0
 Suggests: testthat
 Encoding: UTF-8
