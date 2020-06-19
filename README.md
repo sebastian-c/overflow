@@ -57,6 +57,18 @@ Examples can be found in the "Examples" section of the relevant helpfile, but es
 ## Now, just type the following to create a data.frame in your workspace
 
 soread()
+
+## Copying tibbles (select from the line after `# A tibble: ...` and ctrl-c)
+
+# A tibble: 3 x 2
+      A     B
+  <dbl> <dbl>
+1     1     5
+2     2     3
+3     3    11
+
+soread(skipAfterHeader = TRUE, out = "mydf2")
+
 ```
 
 ### `soanswer`
