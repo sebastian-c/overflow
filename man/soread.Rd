@@ -4,14 +4,29 @@
 \alias{soread}
 \title{Read in StackOverflow pasted table-formatted data}
 \usage{
-soread(sep = "", header = TRUE, stringsAsFactors = FALSE, out = "mydf")
+soread(
+  sep = "",
+  header = TRUE,
+  stringsAsFactors = FALSE,
+  skipAfterHeader = NULL,
+  out = "mydf"
+)
 }
 \arguments{
-\item{sep}{character. Determines the field separator character passed to \code{read.table}.}
+\item{sep}{character. Determines the field separator character passed 
+to \code{read.table}.}
 
-\item{header}{logical. Determines whether the first row consists of names of variables.}
+\item{header}{logical. Determines whether the first row consists of 
+names of variables.}
 
-\item{stringsAsFactors}{logical. Whether strings are converted to factors or remain character variables.}
+\item{stringsAsFactors}{logical. Whether strings are converted to 
+factors or remain character variables. Defaults to `FALSE`}
+
+\item{skipAfterHeader}{numeric. Some newer print methods print additional
+information just below the headers (for example, `tibble`s and `data.table`s).
+If `skipAfterHeader = TRUE`, the second line will be removed. If 
+`skipAfterHeader` is a numeric value, those lines after the header row
+will be removed before reading the data.}
 
 \item{out}{character. Desired output object name. Defaults to \code{"mydf"}.}
 }

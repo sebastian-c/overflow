@@ -1,3 +1,8 @@
+# overflow 0.2-4
+
+* Modified `soread` to allow skipping lines after header, for example when
+using with outpt from a `tibble`.
+
 # overflow 0.2-3
 
 * `solast` added to capture the output from `.Last.value` along with the last 
