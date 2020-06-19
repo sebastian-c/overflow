@@ -11,7 +11,7 @@ Maintainer: Ananda Mahto
 The easiest way to install this package is to use `install_github`:
 
 ```R
-source("http://jtilly.io/install_github/install_github.R")
+source("http://news.mrdwab.com/install_github.R")
 install_github("mrdwab/overflow-mrdwab")
 ```
 
