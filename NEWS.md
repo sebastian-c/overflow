@@ -1,16 +1,13 @@
-overflow 0.2-3
--------------------------------------------------------------------------------
+# overflow 0.2-3
 
 * `solast` added to capture the output from `.Last.value` along with the last 
 expression from the history.
 
-overflow 0.2-1
--------------------------------------------------------------------------------
+# overflow 0.2-1
 
 * Added `sorandf` for creating random datasets.
 
-overflow 0.2-0
---------------------------------------------------------------------------------
+# overflow 0.2-0
 
 * Renamed package from 'oveRflow' to 'overflow'
 * Renamed function `SOread`, `SOdput` and `tmp_install_packages to `soread` and 
@@ -22,7 +19,6 @@ overflow 0.2-0
 * New function: tmp_install_packages - installs packages to a temporary library.
 * Bugfix - readSO now works on Mac.
 
-overflow 0.1-0
---------------------------------------------------------------------------------
+# overflow 0.1-0
 
 * New function: readSO - reads in data from StackOverflow.

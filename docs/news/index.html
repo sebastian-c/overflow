@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Helper functions for answering R StackOverflow questions — overflow-package • overflow</title>
+<title>Changelog • overflow</title>
 
 
 <!-- jquery -->
@@ -39,9 +39,7 @@
 
 
 
-<meta property="og:title" content="Helper functions for answering R StackOverflow questions — overflow-package" />
-<meta property="og:description" content="This package is focused on providing helper functions to answer StackOverflow
-questions. It includes functions to transfer code and create random datasets." />
+<meta property="og:title" content="Changelog" />
 
 
 
@@ -60,7 +58,7 @@ questions. It includes functions to transfer code and create random datasets." /
   </head>
 
   <body data-spy="scroll" data-target="#toc">
-    <div class="container template-reference-topic">
+    <div class="container template-news">
       <header>
       <div class="navbar navbar-default navbar-fixed-top" role="navigation">
   <div class="container">
@@ -112,28 +110,53 @@ questions. It includes functions to transfer code and create random datasets." /
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>Helper functions for answering R StackOverflow questions</h1>
-    <small class="dont-index">Source: <a href='https://github.com/mrdwab/overflow-mrdwab/blob/master/R/package.R'><code>R/package.R</code></a></small>
-    <div class="hidden name"><code>overflow-package.Rd</code></div>
+      <h1 data-toc-skip>Changelog <small></small></h1>
+      <small>Source: <a href='https://github.com/mrdwab/overflow-mrdwab/blob/master/NEWS.md'><code>NEWS.md</code></a></small>
     </div>
 
-    <div class="ref-description">
-    <p>This package is focused on providing helper functions to answer StackOverflow
-questions. It includes functions to transfer code and create random datasets.</p>
-    </div>
-
-
-
-    <h2 class="hasAnchor" id="author"><a class="anchor" href="#author"></a>Author</h2>
-
-    <p>Sebastian Campbell, Ananda Mahto, Julien Barnier, Tyler Rinker</p>
-
+    <div id="overflow-02-3" class="section level1">
+<h1 class="page-header" data-toc-text="0.2-3">
+<a href="#overflow-02-3" class="anchor"></a>overflow 0.2-3</h1>
+<ul>
+<li>
+<code>solast</code> added to capture the output from <code>.Last.value</code> along with the last expression from the history.</li>
+</ul>
+</div>
+    <div id="overflow-02-1" class="section level1">
+<h1 class="page-header" data-toc-text="0.2-1">
+<a href="#overflow-02-1" class="anchor"></a>overflow 0.2-1</h1>
+<ul>
+<li>Added <code>sorandf</code> for creating random datasets.</li>
+</ul>
+</div>
+    <div id="overflow-02-0" class="section level1">
+<h1 class="page-header" data-toc-text="0.2-0">
+<a href="#overflow-02-0" class="anchor"></a>overflow 0.2-0</h1>
+<ul>
+<li>Renamed package from ‘oveRflow’ to ‘overflow’</li>
+<li>Renamed function <code>SOread</code>, <code>SOdput</code> and <code>tmp_install_packages to</code>soread<code>and</code>sodput<code>and</code>sopkgs` for easier use.</li>
+<li>New function: SOdput - Sends <code>dput</code> to clipboard with assignment operator.</li>
+<li>readSO now strips out ## comments and leading whitespace.</li>
+<li>Bugfix - tmp_install_packages no longer overwrites libraries which are not the base and user libraries.</li>
+<li>New function: tmp_install_packages - installs packages to a temporary library.</li>
+<li>Bugfix - readSO now works on Mac.</li>
+</ul>
+</div>
+    <div id="overflow-01-0" class="section level1">
+<h1 class="page-header" data-toc-text="0.1-0">
+<a href="#overflow-01-0" class="anchor"></a>overflow 0.1-0</h1>
+<ul>
+<li>New function: readSO - reads in data from StackOverflow.</li>
+</ul>
+</div>
   </div>
+
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <nav id="toc" data-toggle="toc" class="sticky-top">
       <h2 data-toc-skip>Contents</h2>
     </nav>
   </div>
+
 </div>
 
 
