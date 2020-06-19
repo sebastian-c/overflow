@@ -49,7 +49,8 @@ your workspace called "\code{mydf}" unless specified using the \code{out}
 argument.
 }
 \note{
-By default, stringsAsFactors is FALSE which is different to the R default.
+By default, `stringsAsFactors` is `FALSE` which is different to the R default
+in R versions prior to 4.0.
 }
 \examples{
 

@@ -26,7 +26,8 @@
 #' will be removed before reading the data.
 #' @param out character. Desired output object name. Defaults to \code{"mydf"}.
 #' @return A data.frame as \code{read.table} produces.
-#' @note By default, stringsAsFactors is FALSE which is different to the R default.
+#' @note By default, `stringsAsFactors` is `FALSE` which is different to the R default
+#' in R versions prior to 4.0.
 #'
 #' @export
 #' @author Ananda Mahto
