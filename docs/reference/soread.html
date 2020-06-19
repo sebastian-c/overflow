@@ -72,7 +72,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">overflow</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.2-3</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.2-4</span>
       </span>
     </div>
 
@@ -120,22 +120,39 @@
     <p>A wrapper for <a href='https://rdrr.io/r/utils/read.table.html'>read.table</a>. Reads a table from text or from the clipboard and creates a data.frame from it.</p>
     </div>
 
-    <pre class="usage"><span class='fu'>soread</span>(sep = <span class='st'>""</span>, header = <span class='fl'>TRUE</span>, stringsAsFactors = <span class='fl'>FALSE</span>, out = <span class='st'>"mydf"</span>)</pre>
+    <pre class="usage"><span class='fu'>soread</span>(
+  sep = <span class='st'>""</span>,
+  header = <span class='fl'>TRUE</span>,
+  stringsAsFactors = <span class='fl'>FALSE</span>,
+  skipAfterHeader = <span class='kw'>NULL</span>,
+  out = <span class='st'>"mydf"</span>
+)</pre>
 
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">
     <colgroup><col class="name" /><col class="desc" /></colgroup>
     <tr>
       <th>sep</th>
-      <td><p>character. Determines the field separator character passed to <code>read.table</code>.</p></td>
+      <td><p>character. Determines the field separator character passed 
+to <code>read.table</code>.</p></td>
     </tr>
     <tr>
       <th>header</th>
-      <td><p>logical. Determines whether the first row consists of names of variables.</p></td>
+      <td><p>logical. Determines whether the first row consists of 
+names of variables.</p></td>
     </tr>
     <tr>
       <th>stringsAsFactors</th>
-      <td><p>logical. Whether strings are converted to factors or remain character variables.</p></td>
+      <td><p>logical. Whether strings are converted to 
+factors or remain character variables. Defaults to `FALSE`</p></td>
+    </tr>
+    <tr>
+      <th>skipAfterHeader</th>
+      <td><p>numeric. Some newer print methods print additional
+information just below the headers (for example, `tibble`s and `data.table`s).
+If `skipAfterHeader = TRUE`, the second line will be removed. If 
+`skipAfterHeader` is a numeric value, those lines after the header row
+will be removed before reading the data.</p></td>
     </tr>
     <tr>
       <th>out</th>
